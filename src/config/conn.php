@@ -5,8 +5,8 @@ session_start();
 define('BASEURL', 'http://localhost/app_inventori_barang/src');
 
 $host = "localhost";
-$username = "mci";
-$password = "mcipassword";
+$username = "root";
+$password = "Mysql@dminpass#2024";
 $database = "learn_mci_app_inventori";
 
 // koneksi ke database

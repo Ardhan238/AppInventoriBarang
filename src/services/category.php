@@ -2,11 +2,19 @@
 
 require_once '../config/conn.php';
 
-function selectAll()
+function selectAllCategory()
 {
     global $connection;
     $sql = "SELECT * FROM categories";
     return $connection->query($sql);
+}
+
+function selectCategoryById($id)
+{
+    global $connection;
+    $sql = "SELECT * FROM categories WHERE id = $id";
+    $result = $connection->query($sql);
+    return $result->fetch_assoc();
 }
 
 function delete($id)
